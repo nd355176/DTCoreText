@@ -36,7 +36,7 @@
 
 		_paragraphStyle.lineHeightMultiple = 1;
 		
-		// specifying line height interferes with correct positioning
+		// specifiying line height interfers with correct positioning
 		_paragraphStyle.minimumLineHeight = 0;
 		_paragraphStyle.maximumLineHeight = 0;
 		

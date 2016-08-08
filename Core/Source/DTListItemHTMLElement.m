@@ -296,7 +296,7 @@
 	// append child elements
 	NSAttributedString *childrenString = [super attributedString];
 
-	// append list prefix
+	// apend list prefix
 	NSAttributedString *listPrefix = [self _listPrefix];
 	
 	if (listPrefix)

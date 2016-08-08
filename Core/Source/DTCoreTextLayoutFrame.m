@@ -267,7 +267,7 @@ static BOOL _DTCoreTextLayoutFramesShouldDrawDebugFrames = NO;
 	return lineOrigin;
 }
 
-// determines the "half leading"
+// determins the "half leading"
 - (CGFloat)_algorithmWebKit_halfLeadingOfLine:(DTCoreTextLayoutLine *)line
 {
 	CGFloat maxFontSize = [line lineHeight];
@@ -570,7 +570,7 @@ static BOOL _DTCoreTextLayoutFramesShouldDrawDebugFrames = NO;
 			// create the truncated line
 			line = CTLineCreateTruncatedLine(baseLine, availableSpace, truncationType, elipsisLineRef);
             
-            // check if truncation occurred
+            // check if truncation occured
             BOOL truncationOccured = !areLinesEqual(baseLine, line);
             // if yes check was it before the end of the current paragraph or after
             NSUInteger endOfParagraphIndex = NSMaxRange(currentParagraphRange);
@@ -580,7 +580,7 @@ static BOOL _DTCoreTextLayoutFramesShouldDrawDebugFrames = NO;
                 if (truncationOccured)
                 {
                     CFIndex truncationIndex = getTruncationIndex(line, elipsisLineRef);
-                    // if truncation occurred after the end of the paragraph
+                    // if truncation occured after the end of the paragraph
                     // move truncation token to the end of the paragraph
                     if (truncationIndex > endOfParagraphIndex)
                     {
@@ -1358,7 +1358,7 @@ static BOOL _DTCoreTextLayoutFramesShouldDrawDebugFrames = NO;
 				continue;
 			}
 			
-			// don't draw background, strikeout or underline for trailing white space
+			// don't draw background, strikout or underline for trailing white space
 			if ([oneRun isTrailingWhitespace])
 			{
 				continue;
@@ -1456,7 +1456,7 @@ static BOOL _DTCoreTextLayoutFramesShouldDrawDebugFrames = NO;
 						CGContextAddRect(context, clipRect);
 						CGContextClipToRect(context, clipRect);
 						
-						// Move the text outside of the clip rect so that only the shadow is visible
+						// Move the text outside of the clip rect so that only the shadow is visisble
 						CGContextSetTextPosition(context, textPosition.x + clipRect.size.width, textPosition.y);
 						
 						// draw each shadow

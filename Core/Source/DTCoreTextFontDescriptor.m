@@ -88,7 +88,7 @@ static BOOL _needsChineseFontCascadeFix = NO;
 // preloads all available system fonts for faster font matching
 + (void)asyncPreloadFontLookupTable
 {
-	// asynchronously load all available fonts into override table
+	// asynchronically load all available fonts into override table
 	[self _createDictionaryOfAllAvailableFontOverrideNamesWithCompletion:^(NSDictionary *dictionary) {
 		
 		// now we're done and we can merge the new dictionary synchronized
