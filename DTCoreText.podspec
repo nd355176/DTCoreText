@@ -1,6 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DTCoreText'
-  spec.version      = '1.6.17'
+  #spec.version      = '1.6.17'  #old
+  spec.version      = '1.6.18'  
   spec.platform     = :ios, '4.3'
   spec.license      = 'BSD'
   spec.source       = { :git => 'https://github.com/nd355176/XZCoreText.git', :tag => spec.version.to_s }
